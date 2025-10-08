@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { backendUrl } from "../App";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 const Category = ({token}) => {
   const [categories, setCategories] = useState([]);

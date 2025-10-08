@@ -1,5 +1,5 @@
-
 import brandModel from './../models/brandModel.js';
+
 const addBrand = async (req,res)=>{
     try {
         const {name}= req.body;

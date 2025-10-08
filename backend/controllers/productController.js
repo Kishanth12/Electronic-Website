@@ -42,7 +42,7 @@ const addProduct = async (req,res)=>{
 //list product
 const listProducts = async (req,res)=>{
    try {
-    const products = await productModel.find({}).populate('category', 'name').populate('brand','name');
+    const products = await productModel.find({}).populate('category', 'name').populate('brand','name').populate('reviews.user', 'name');
       res.json({success:true,products})
     
    } catch (error) {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 import axios from 'axios';
 
 const Login = () => {
@@ -39,7 +39,7 @@ const Login = () => {
   }
   useEffect(()=>{
     if(token){
-      navigate('/')
+      navigate('/home')
     }
   },[token])
 

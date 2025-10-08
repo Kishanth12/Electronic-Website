@@ -6,7 +6,7 @@ import SideBar from "./components/SideBar";
 import List from "./pages/List";
 import Order from "./pages/Order";
 import Login from "./components/Login";
-import { ToastContainer, toast } from 'react-toastify';
+import { Toaster } from 'react-hot-toast';
 import Category from "./pages/Category";
 import Brand from "./pages/Brand";
 
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToastContainer/>
+      <Toaster/>
       {token === "" ? 
         <Login setToken={setToken} />
        : 

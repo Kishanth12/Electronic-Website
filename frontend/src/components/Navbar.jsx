@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
-import { toast } from "react-toastify";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -30,7 +29,7 @@ const Navbar = () => {
         <img src={assets.logo} className="w-48" alt="" />
       </Link>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700 ">
-        <NavLink to={"/"} className="flex flex-col items-center gap-1">
+        <NavLink to={"/home"} className="flex flex-col items-center gap-1">
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px]  bg-gray-700 hidden" />
         </NavLink>

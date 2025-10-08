@@ -14,10 +14,12 @@ import menu_icon from './menu_icon.png'
 import contact_img from './contact_img.png'
 import cross_icon from './cross_icon.png'
 import banner from './banner.png'
+import side from './side.png'
 
 
 export const assets = {
     logo,
+    side,
     cart_icon,
     dropdown_icon,
     exchange_icon,
